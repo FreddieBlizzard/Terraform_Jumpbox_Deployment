@@ -1,21 +1,19 @@
-# *Jumpbox Azure Design Lab*
-
+### *Jumpbox Azure Design Lab*
+___
 This project demonstrates the deployment of a segmented Azure network using Terraform. It uses a jumpbox server as an intermediary to provide controlled access to a private internal file server. The project is designed to evolve over time as I continue learning IaC and Azure infrastructure design.
-
-<br/>
 
 ___
 ### Architecture:
   
-***Local Machine***
+**Local Machine**
 
-↓ RDP (restricted to single approved IP)  
+*↓ RDP (restricted to single approved IP)*  
 
-***Jumpbox VM*** (Management Subnet, Public IP) 
+**Jumpbox VM** (Management Subnet, Public IP) 
 
-↓ RDP (internal network only)  
+*↓ RDP (internal network only)*  
 
-***File Server VM*** (Private Subnet, no public access)
+**File Server VM** (Private Subnet, no public access)
 
 <br/>
 
@@ -162,7 +160,7 @@ subnets = {
   }
 }
 ```
-> Password variables are intentionally not included in this example. Provide sensitive values at runtime or through environment variables.
+> Password variables are intentionally not included in this example. Sensitive values should be provided at runtime or through environment variables.
 
 ### Notes
 
