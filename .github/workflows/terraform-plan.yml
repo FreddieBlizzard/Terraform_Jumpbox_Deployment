@@ -1,0 +1,28 @@
+name: Terraform Validation
+
+on:
+  push:
+    branches:
+      - adding-github-actions
+  pull_request:
+
+jobs:
+  terraform:
+    name: Terraform Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout of repository
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Format Checking
+        run: terraform fmt -check
+
+      - name: Terraform Initializing
+        run: terraform init
+
+      - name: Terraform Validation
+        run: terraform validate
