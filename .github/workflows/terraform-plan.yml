@@ -3,7 +3,7 @@ name: Terraform Validation
 on:
   push:
     branches:
-      - adding-github-actions
+      - main
   pull_request:
 
 jobs:
