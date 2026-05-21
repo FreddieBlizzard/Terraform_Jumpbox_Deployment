@@ -3,7 +3,7 @@ name: Terraform Validation
 on:
   push:
     branches:
-      - main
+      - adding-azure-oidc
   pull_request:
 
 permissions:
