@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - adding-azure-oidc
+      - main
   pull_request:
 
 permissions:
@@ -44,3 +45,6 @@ jobs:
 
       - name: Terraform Validation
         run: terraform validate
+
+      - name: Generate Terraform Plan
+        run: terraform plan -input=false
