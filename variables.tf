@@ -7,11 +7,6 @@ variable "resource_group_name" {
   type        = string
 }
 
-variable "subscription_id" {
-  description = "The Subscription ID on Azure"
-  type        = string
-}
-
 variable "location" {
   description = "Azure region"
   type        = string
