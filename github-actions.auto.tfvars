@@ -10,9 +10,9 @@ location            = "East US"
 company_vnet_name          = "Company_Virtual_Network"
 company_vnet_address_space = ["10.0.0.0/16"]
 
-vm_file_server_name    = "vm-file-01"
-vm_file_server_size    = "Standard_D2s_v3"
-admin_username         = "adminuser"
+vm_file_server_name = "vm-file-01"
+vm_file_server_size = "Standard_D2s_v3"
+admin_username      = "adminuser"
 
 jumpbox_vm_name        = "vm-jump-01"
 jumpbox_vm_size        = "Standard_D2s_v3"
